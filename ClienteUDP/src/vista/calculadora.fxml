@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorCalculadora">
+
+    <children>
+
+        <!-- Título -->
+        <Label layoutX="240.0" layoutY="30.0" text="Calculadora UDP">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font></Label>
+
+        <!-- Entrada 1 -->
+        <Label layoutX="140.0" layoutY="85.0" text="Primer número">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+        <TextField fx:id="txtn1" layoutX="260.0" layoutY="80.0" />
+
+        <!-- Entrada 2 -->
+        <Label layoutX="140.0" layoutY="145.0" text="Segundo número">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+        <TextField fx:id="txtn2" layoutX="260.0" layoutY="140.0" />
+
+        <!-- operaciones -->
+        <Button layoutX="120.0" layoutY="210.0" onAction="#sumar" text="Sumar" />
+
+        <Button layoutX="200.0" layoutY="210.0" onAction="#restar" text="Restar" />
+
+        <Button layoutX="280.0" layoutY="210.0" onAction="#multiplicar" text="Multiplicar" />
+
+        <Button layoutX="390.0" layoutY="210.0" onAction="#dividir" text="Dividir" />
+
+        <!-- Botón limpiar -->
+        <Button layoutX="250.0" layoutY="260.0" onAction="#limpiar" text="Limpiar" />
+
+        <!-- Resultado -->
+        <Label fx:id="lblResult" layoutX="250.0" layoutY="320.0" text="Resultado">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+
+    </children>
+
+</Pane>
